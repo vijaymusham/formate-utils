@@ -1,3 +1,4 @@
+
 import React from 'react'
 
 export const PriceFormater = ({ price }) => {
@@ -18,5 +19,20 @@ export const CommaFormater = ({ number }) => {
     return Intl.NumberFormat("en-IN", {
         maximumFractionDigits: 2,
     }).format(number)
+}
+
+export const ordinal = (i) => {
+    var j = i % 10,
+        k = i % 100;
+    if (j === 1 && k !== 11) {
+        return i + "st";
+    }
+    if (j === 2 && k !== 12) {
+        return i + "nd";
+    }
+    if (j === 3 && k !== 13) {
+        return i + "rd";
+    }
+    return i + "th";
 }
 

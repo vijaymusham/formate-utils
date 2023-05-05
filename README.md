@@ -1,3 +1,5 @@
+React formate utils
+
 ## Install
 
     npm install formate-utils
@@ -15,4 +17,10 @@
 **Comma Formate**
 ```jsx
     <CommaFormater  number={2000}  />
+```
+
+**Ordinal/Order**
+
+```js
+ordinal(2)
 ```

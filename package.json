@@ -1,6 +1,6 @@
 {
     "name": "formate-utils",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "description": "",
     "main": "index.jsx",
     "scripts": {
@@ -21,7 +21,9 @@
         "comma formate",
         "titlecase",
         "utils",
-        "formate"
+        "formate",
+        "order",
+        "ordinal"
     ],
     "peerDependencies": {
         "react": "^18.2.0",
