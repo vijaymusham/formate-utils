@@ -1,0 +1,31 @@
+{
+    "name": "formate-utils",
+    "version": "1.0.1",
+    "description": "",
+    "main": "index.jsx",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vijaymusham/formate-utils.git"
+    },
+    "author": "vijaymusham",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/vijaymusham/formate-utils/issues"
+    },
+    "homepage": "https://github.com/vijaymusham/formate-utils#readme",
+    "keywords": [
+        "price formate",
+        "comma formate",
+        "titlecase",
+        "utils",
+        "formate"
+    ],
+    "peerDependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    }
+
+}
