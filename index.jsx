@@ -36,3 +36,7 @@ export const ordinal = (i) => {
     return i + "th";
 }
 
+export const preventNegativeValue = (e) => ["e", "E", "+", "-"].includes(e.key) && e.preventDefault()
+
+export const preventSpecialChars = (e) => ['\'', ',', '`', '!', '"', '#', '$', '%', '&', '(', ')', '*', '+', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', ']', '^', '_', '\\', '{', '|', '}', '~'].includes(e.key) && e.preventDefault()
+
