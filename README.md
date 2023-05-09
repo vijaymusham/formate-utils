@@ -1,4 +1,4 @@
-> This package is use for React formate utils for TitleCase Formate, India Rupee Price Formate, Comma Formate, Ordinal/Order, Prevent Negative Number, Prevent Special Characters
+> This package is use for React formate utils for TitleCase Formate, India Rupee Price Formate, Comma Formate, Ordinal/Order, Prevent Negative Number, Prevent Special Characters, Sort List
 
 - **💪🏻 2 Peer Dependencies**
 - **✅ Inmutable**
@@ -41,7 +41,30 @@ Output: 2nd
     <input  type="text"  value={value}  onKeyDown={preventSpecialChars}  />
 ```
 Prevent following Special Characters
-['\'', ',', '`', '!', '"', '#', '$', '%', '&', '(', ')', '*', '+', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', ']', '^', '_', '\\', '{', '|', '}', '~']
+['\'', ',', '`', '!', '"', '#', '$', '%', '&', '(', ')', '*', '+', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '
+[', ']', '^', '_', '\\', '{', '|', '}', '~']
 
+**Sort List of Objects**
+
+```js
+  const singers = [
+    { name: 'Steven Tyler', band: 'Aerosmith', born: 1948 },
+    { name: 'Karen Carpenter', band: 'The Carpenters', born: 1950 },
+    { name: 'Kurt Cobain', band: 'Nirvana', born: 1967 },
+    { name: 'Stevie Nicks', band: 'Fleetwood Mac', born: 1948 },
+  ];
+  
+  // array is sorted by band, in ascending order by default
+        sortList(singers,band'));
+
+// array is sorted by band in descending order
+        sortList(singers,'band', 'desc'));
+
+// array is sorted by name in ascending order
+        sortList(singers,'name'));
+
+// array is sorted by date if birth in descending order
+        sortList(singers,'born', 'desc'));
+```
 ## Peer Dependencies
 **react, react-dom**

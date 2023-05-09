@@ -1,6 +1,6 @@
 {
     "name": "formate-utils",
-    "version": "1.1.2",
+    "version": "1.2.2",
     "description": "",
     "main": "index.jsx",
     "scripts": {
@@ -28,7 +28,8 @@
         "number",
         "limit",
         "special",
-        "character"
+        "character",
+        "sort"
     ],
     "peerDependencies": {
         "react": "^18.2.0",
